@@ -35,9 +35,6 @@ rabbitmq-plugins enable rabbitmq_management
 ss -tunelp | grep 15672
 ufw allow proto tcp from any to any port 5672,15672
 
-rabbitmqctl add_user un St1r.o2n,gP3a?5ssword
-rabbitmqctl set_user_tags un administrator
-
 wget http://127.0.0.1:15672/cli/rabbitmqadmin
 chmod +x rabbitmqadmin
 mv rabbitmqadmin /etc/rabbitmq
