@@ -24,11 +24,10 @@ A microservice that will store customers and send them emails based on mailing I
 ### create/start VM's
 1) `provisioning-machines/main$ vagrant up`
 
-### install needed stack on VM's (all must be started inside destiny VM)
+### install needed services on VM's (all must be started inside destiny VM)
 1) `provisioning-stack/base.sh`
-2) `provisioning-stack/.sh`
-3) `provisioning-stack/.sh`
-4) `provisioning-stack/.sh`
-5) `provisioning-stack/.sh`
-6) `provisioning-stack/.sh`
-7) `provisioning-stack/.sh`
+2) `provisioning-stack/postgresql_server_install.sh`
+3) `provisioning-stack/postgresql_structures.sh`
+5) `provisioning-stack/rabbitmq_server_install.sh`
+6) `provisioning-stack/rabbitmq_structures.sh`
+4) `provisioning-stack/redis_server_install.sh`
