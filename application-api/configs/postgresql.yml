@@ -1,0 +1,7 @@
+host: 172.16.10.10
+port: 5432
+user: mailing
+password: "St1r.o2n,gP3a?5ssword"
+database: mailing
+maxConnections: 1
+statementCacheCapacity: 0

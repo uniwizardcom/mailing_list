@@ -1,7 +1,7 @@
-# mailing_list
+# The "mailing_list" project
 A microservice that will store customers and send them emails based on mailing ID
 
-## Examples.
+## Examples:
 
 ### Subscribe new messages for mailing
 
@@ -19,7 +19,9 @@ A microservice that will store customers and send them emails based on mailing I
 
 ` curl -X POST 172.16.10.10:8080/api/messages/send -d '{"mailing_id":1}'`
 
-## Building VM and provisioning
+*********************************************************************************************
+
+## Building VM and provisioning:
 
 ### create/start VM's
 1) `provisioning-machines/main$ vagrant up`
@@ -31,3 +33,7 @@ A microservice that will store customers and send them emails based on mailing I
 5) `provisioning-stack/rabbitmq_server_install.sh`
 6) `provisioning-stack/rabbitmq_structures.sh`
 4) `provisioning-stack/redis_server_install.sh`
+
+*********************************************************************************************
+
+
