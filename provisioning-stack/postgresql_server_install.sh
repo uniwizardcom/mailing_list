@@ -17,7 +17,6 @@ vi /etc/postgresql/xx/main/pg_hba.con
 #
 sudo ufw allow 5432/tcp
 
-
 sudo -u postgres psql
 # ALTER USER postgres PASSWORD 'postgres';
 service postgresql restart

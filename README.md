@@ -5,11 +5,11 @@ A microservice that will store customers and send them emails based on mailing I
 
 ### Subscribe new messages for mailing
 
-`curl -X POST 172.16.10.10:8080/api/messages -d '{"email":"jan.kowalski@example.com","title":"Interview","content":"simple text","mailing_id":1, “insert_time“: “2020-04-24T05:42:38.725412916Z”}'`
+`curl -X POST 172.16.10.10:8080/api/messages -d '{"email":"jan.kowalski@example.com","title":"Interview","content":"simple text","mailing_id":1, "insert_time": "2020-04-24T05:42:38.725412916Z”}'`
 
-`curl -X POST 172.16.10.10:8080/api/messages -d '{"email":"jan.kowalski@example.com","title":"Interview","content":"simple text","mailing_id":2, “insert_time“: “2020-04-24T05:42:38.725412916Z}'`
+`curl -X POST 172.16.10.10:8080/api/messages -d '{"email":"jan.kowalski@example.com","title":"Interview","content":"simple text","mailing_id":2, "insert_time": "2020-04-24T05:42:38.725412916Z}'`
 
-`curl -X POST 172.16.10.10:8080/api/messages -d '{"email":"jan.kowalski@example.com","title":"Interview","content":"simple text","mailing_id":3, “insert_time“: “2020-04-24T05:42:38.725412916Z}'`
+`curl -X POST 172.16.10.10:8080/api/messages -d '{"email":"jan.kowalski@example.com","title":"Interview","content":"simple text","mailing_id":3, "insert_time": "2020-04-24T05:42:38.725412916Z}'`
 
 ### Deleting subcribe from mailing
 
@@ -33,6 +33,9 @@ A microservice that will store customers and send them emails based on mailing I
 5) `provisioning-stack/rabbitmq_server_install.sh`
 6) `provisioning-stack/rabbitmq_structures.sh`
 4) `provisioning-stack/redis_server_install.sh`
+
+### GUI for services
+1) RabbitMQ: http://172.16.10.10:15672/#/
 
 *********************************************************************************************
 
