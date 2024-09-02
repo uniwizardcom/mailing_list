@@ -11,13 +11,19 @@ A microservice that will store customers and send them emails based on mailing I
 
 `curl -X POST 172.16.10.10:8080/api/messages -d '{"email":"jan.kowalski@example.com","title":"Interview","content":"simple text","mailing_id":3, "insert_time": "2020-04-24T05:42:38.725412916Z}'`
 
+- produce: `mailing\customers\create`Update REA
+
 ### Deleting subcribe from mailing
 
 `curl -X DELETE 172.16.10.10:8080/api/messages/{id}`
 
+- produce: `mailing\groups\delete`
+
 ### The sending action to subscribe to all (mailing_id = -1) or only from specific group (mailing_id > 0)
 
 ` curl -X POST 172.16.10.10:8080/api/messages/send -d '{"mailing_id":1}'`
+
+- produce: `mailing\groups\send`
 
 *********************************************************************************************
 
