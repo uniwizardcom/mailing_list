@@ -1,8 +1,0 @@
-name: "tabakiera.krzysztof@gmail.com"
-auth:
-  identity: ""
-  account: "example@gmail.com"
-  pass: "examplePAss12"
-smtp:
-  host: "smtp.gmail.com"
-  port: 587

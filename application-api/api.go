@@ -7,6 +7,7 @@ import (
 	"application-api/mailbox"
 	"application-api/postgresql"
 	"application-api/rabbitmq"
+	newApi "bitbucket.org/niewiadomskiwojciech/uwmod-api"
 	"encoding/json"
 	"errors"
 	"fmt"
@@ -24,6 +25,8 @@ type Api struct {
 }
 
 func main() {
+	newApiObj := newApi.NewApiService()
+
 	api := &Api{}
 	api.commands = initializers.CommandHandlers()
 	api.rabbitmq = initializers.RabbitMQ()
